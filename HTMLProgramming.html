@@ -1,0 +1,45 @@
+<!-- First Web Programming
+ * Purpose:  Click button on the screen to update a counter1
+ * Author:   Chris Owens
+ * Date:     2/24/20
+ * Version:  1.0
+-->
+
+<!-- Headers, define classes counter and button -->
+<html>
+  <head>
+    <title> First Web Site </title>
+  </head>
+    <body>
+      <div class="Web Programming"></div>
+      <h3>My First Web Program</h3>
+      <h4>Click button to update a Counter</h4>
+      <span class = "counter1">Nothing</span>
+      <button class = "button1">Update Counter</button>
+    </body>
+</html>
+
+<!-- Javascript - create variables and display results of actions when
+the button is clicked -->
+<script>
+
+  // update the counter when button is clicked
+  // if counter is even update by 1
+  // if counter is odd update by 3
+  var counter = 0
+  var myButton1 = document.querySelector('.button1')
+  var myCounter = document.querySelector('.counter1')
+  myCounter.innerHTML = counter
+  myButton1.addEventListener('click', function(){
+    if (counter%2 == 0)
+    {
+      counter ++
+    }
+    else
+    {
+      counter +=3
+    }
+  myCounter.innerHTML = counter
+  })
+
+</script>
